@@ -473,7 +473,7 @@
     const k = []; // will be filled client-side
     html += `</ul><input id="kycFile" type="file" class="form-control"/><div class="mt-2"><button class="btn btn-sm btn-success" id="uploadKyc">Upload</button></div></div>`;
     html += `<div class="card p-3"><h6>Addresses</h6><ul class="list-group mb-2">`;
-    html += `</ul><input id="newAddr" class="form-control mb-2"/><button class="btn btn-sm btn-primary" id="addAddr">Add Address</button></div>`;
+    html += `</ul><input id="newAddr" class="form-control mb-2"/><button class="btn btn-sm btn-primary" id="addAddr" placeholder"Enter Address,City,Pincode,State">Add Address</button></div>`;
     el.innerHTML = html;
     document.getElementById('saveProfile').addEventListener('click', function(){ user.name = $('pName').value; user.email = $('pEmail').value; user.mobile = $('pMobile').value; saveUser(user); $('profMsg').innerHTML = '<div class="alert alert-success">Profile saved</div>'; if($('navUser')) $('navUser').textContent = user.name; });
     document.getElementById('uploadKyc').addEventListener('click', function(){ const f = $('kycFile').files[0]; if(!f){ alert('Select file'); return; } user.kyc = user.kyc||{}; user.kyc[f.name] = 'uploaded'; saveUser(user); renderProfile(); });
