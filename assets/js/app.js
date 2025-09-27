@@ -281,7 +281,7 @@
               </select>
             </div>
             <div id="toTarget" class="mb-3 col-md-12"></div>
-            <div class="mb-3 col-md-6"><label>Amount</label><input id="tAmount" class="form-control" /></div>
+            <div class="mb-3 col-md-6"><label>Amount</label><input id="tAmount" class="form-control" placeholder="Enter Amount"required/></div>
             <div class="mb-3 col-md-6"><label>Note</label><input id="tNote" class="form-control" /></div>
           </div>
           <div class="d-flex gap-2"><button class="btn btn-success" type="submit">Transfer</button></div>
@@ -298,7 +298,7 @@
         const bens = user.beneficiaries || [];
         let opt = '<label>Beneficiary / Other Bank</label><select id="toAcct" class="form-select">';
         opt += `<option value="">-- Enter new beneficiary --</option>` + bens.map(b=>`<option value="ben_${b.id}">${b.name} - ${b.bank} - ${b.acc}</option>`).join('');
-        opt += `</select><div class="mt-2"><input id="newBenName" placeholder="Beneficiary name" class="form-control mb-1"/><input id="newBenBank" placeholder="Bank name" class="form-control mb-1"/><input id="newBenAcc" placeholder="Account no / UPI" class="form-control mb-1"/></div>`;
+        opt += `</select><div class="mt-2"><input id="newBenName" placeholder="Beneficiary Name" class="form-control mb-1"/><input id="newBenBank" placeholder="Bank Name" class="form-control mb-1"/><input id="newBenAcc" placeholder="Account no / UPI" class="form-control mb-1" required/></div>`;
         toTarget.innerHTML = opt;
       }
     }
@@ -342,8 +342,8 @@
           <div class="row">
             <div class="mb-3 col-md-6"><label>From Account</label><select id="billFrom" class="form-select">${user.accounts.map(a=>`<option value="${a.id}">${a.name} (₹${toNum(a.balance).toLocaleString()})</option>`).join('')}</select></div>
             <div class="mb-3 col-md-6"><label>Category</label><select id="billCat" class="form-select"><option>Mobile Recharge</option><option>Electricity</option><option>Gas</option><option>DTH</option><option>Insurance</option></select></div>
-            <div class="mb-3 col-md-6"><label>Reference / Number</label><input id="billRef" class="form-control"/></div>
-            <div class="mb-3 col-md-6"><label>Amount</label><input id="billAmt" class="form-control"/></div>
+            <div class="mb-3 col-md-6"><label>Reference / Number</label><input id="billRef" class="form-control" required/></div>
+            <div class="mb-3 col-md-6"><label>Amount</label><input id="billAmt" class="form-control" placeholder"Enter Amount" required/></div>
           </div>
           <div><button class="btn btn-success" type="submit">Pay Bill</button></div>
         </form>
@@ -386,7 +386,7 @@
       <div class="card p-3 mb-3">
         <h6>Loan Eligibility Calculator</h6>
         <form id="loanCalc"><div class="row">
-          <div class="mb-3 col-md-4"><label>Loan Amount</label><input id="loanAmt" class="form-control" /></div>
+          <div class="mb-3 col-md-4"><label>Loan Amount</label><input id="loanAmt" class="form-control" required/></div>
           <div class="mb-3 col-md-4"><label>Tenure (yrs)</label><input id="loanTen" class="form-control" value="5" /></div>
           <div class="mb-3 col-md-4"><label>Interest % p.a.</label><input id="loanInt" class="form-control" value="9" /></div>
         </div><button class="btn btn-primary">Calculate EMI</button></form>
@@ -395,7 +395,7 @@
       <div class="card p-3"><h6>Apply Loan</h6>
         <form id="applyLoan"><div class="row">
           <div class="mb-3 col-md-4"><label>Type</label><select id="loanType" class="form-select"><option>Personal</option><option>Home</option><option>Car</option></select></div>
-          <div class="mb-3 col-md-4"><label>Amount</label><input id="applyAmt" class="form-control" /></div>
+          <div class="mb-3 col-md-4"><label>Amount</label><input id="applyAmt" class="form-control" required/></div>
           <div class="mb-3 col-md-4"><label>Tenure (yrs)</label><input id="applyTen" class="form-control" value="3" /></div>
         </div><button class="btn btn-success">Apply</button></form>
         <div id="loanMsg" class="mt-2"></div>
@@ -427,9 +427,9 @@
     let html = `<h4>Budget Planner</h4>
       <div class="card p-3 mb-3">
         <form id="budgetForm"><div class="row">
-          <div class="mb-3 col-md-4"><label>Monthly Income</label><input id="inc" class="form-control" /></div>
-          <div class="mb-3 col-md-4"><label>Monthly Expenses</label><input id="exp" class="form-control" /></div>
-          <div class="mb-3 col-md-4"><label>Savings Goal</label><input id="goal" class="form-control" /></div>
+          <div class="mb-3 col-md-4"><label>Monthly Income</label><input id="inc" class="form-control" required/></div>
+          <div class="mb-3 col-md-4"><label>Monthly Expenses</label><input id="exp" class="form-control" required/></div>
+          <div class="mb-3 col-md-4"><label>Savings Goal</label><input id="goal" class="form-control" required/></div>
         </div><button class="btn btn-primary">Save Budget</button></form>
         <div id="budgetMsg" class="mt-2"></div>
       </div>
