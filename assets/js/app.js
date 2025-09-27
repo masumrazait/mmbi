@@ -386,7 +386,7 @@
       <div class="card p-3 mb-3">
         <h6>Loan Eligibility Calculator</h6>
         <form id="loanCalc"><div class="row">
-          <div class="mb-3 col-md-4"><label>Loan Amount</label><input id="loanAmt" class="form-control" required/></div>
+          <div class="mb-3 col-md-4"><label>Loan Amount</label><input id="loanAmt" class="form-control" placeholder="Enter Amount" required/></div>
           <div class="mb-3 col-md-4"><label>Tenure (yrs)</label><input id="loanTen" class="form-control" value="5" /></div>
           <div class="mb-3 col-md-4"><label>Interest % p.a.</label><input id="loanInt" class="form-control" value="9" /></div>
         </div><button class="btn btn-primary">Calculate EMI</button></form>
