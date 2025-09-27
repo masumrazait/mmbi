@@ -1,3 +1,24 @@
+## 📸 Screenshots
+
+### 🧑 Personalized Dashboard  
+![Dashboard](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(1).png)
+
+---
+
+### 📊 Budget Planner  
+![Budget Planner](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(2).png)
+
+---
+
+### 💡 Bill Payment Interface  
+![Bill Payment](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(3).png)
+
+---
+
+### 💼 Accounts Overview  
+![Accounts Overview](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(4).png)
+
+
 # 🏦 Mannat Bank
 
 **Mannat Bank** is a modern fintech web application that offers a seamless, secure, and user-friendly digital banking experience. With modules like account management, fund transfers, bill payments, investments, and budgeting, it helps users manage finances smartly and efficiently.
