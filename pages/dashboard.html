@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard - Mannat Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#"><img src="../assets/img/logo.svg" alt="logo" class="brand-logo"> <span class="brand-text">Mannat Bank</span></a>
+    <div class="ms-auto d-flex align-items-center gap-2">
+      <span id="navUser" class="text-white small"></span>
+      <button id="logoutBtn" class="btn btn-outline-light btn-sm">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <div class="row">
+    <aside class="col-md-3">
+      <div class="list-group shadow-sm">
+        <a class="list-group-item list-group-item-action active" id="menu-dashboard">Dashboard</a>
+        <a class="list-group-item list-group-item-action" id="menu-accounts">Accounts Overview</a>
+        <a class="list-group-item list-group-item-action" id="menu-transact">Fund Transfer</a>
+        <a class="list-group-item list-group-item-action" id="menu-bill">Bill Payments</a>
+        <a class="list-group-item list-group-item-action" id="menu-cards">Card Services</a>
+        <a class="list-group-item list-group-item-action" id="menu-loans">Loans</a>
+        <a class="list-group-item list-group-item-action" id="menu-invest">Investments</a>
+        <a class="list-group-item list-group-item-action" id="menu-budget">Budget Planner</a>
+        <a class="list-group-item list-group-item-action" id="menu-profile">Profile & KYC</a>
+        <a class="list-group-item list-group-item-action" id="menu-epass">e-Passbook / Statements</a>
+        <a class="list-group-item list-group-item-action" id="menu-support">Support</a>
+      </div>
+    </aside>
+    <main class="col-md-9">
+      <div id="contentArea" class="card p-4 shadow-sm">
+        <!-- Dynamic content loaded here -->
+      </div>
+    </main>
+  </div>
+</div>
+
+<footer class="py-3 text-center small text-muted">
+  © 2025 Mannat Bank of India.
+</footer>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

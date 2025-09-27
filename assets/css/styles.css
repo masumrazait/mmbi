@@ -1,0 +1,12 @@
+body { background:#f6f8fb; }
+.brand-logo { width:36px; height:36px; }
+.bg-gradient-side { background: linear-gradient(135deg,#0d6efd,#6610f2); min-height:180px; }
+.card { border-radius:12px; }
+.list-group-item-action { cursor:pointer; }
+.chart-card { min-height:220px; }
+.small-muted { color:#6c757d; }
+canvas { max-width:100%; }
+
+.chart-card canvas{max-width:400px;max-height:240px;margin:auto;display:block;}
+
+#budgetChart{max-width:400px;max-height:240px;margin:auto;display:block;}

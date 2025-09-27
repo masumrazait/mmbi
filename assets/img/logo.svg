@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<defs><style>.a{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#0d6efd;font-weight:700}</style></defs>
+<rect x="6" y="14" width="108" height="92" rx="10" fill="#fff" stroke="#0d6efd" stroke-width="3"/>
+<path d="M20 72h12v-28H20zM44 72h12v-38H44zM68 72h12v-18H68z" fill="#0d6efd"/>
+<circle cx="94" cy="28" r="8" fill="#0d6efd"/>
+<text x="20" y="106" class="a">Mannat Bank</text>
+</svg>
