@@ -5,7 +5,7 @@
 
 ---
 
-### 📊 Budget Planner  
+### 📊 Cards  
 ![Budget Planner](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(2).png)
 
 ---
@@ -15,8 +15,8 @@
 
 ---
 
-### 💼 Accounts Overview  
-![Accounts Overview](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(4).png)
+### 📊 Budget Planner  
+![Budget Planner](https://github.com/masumrazait/mmbi/raw/main/assets/img/img%20(4).png)
 
 
 # 🏦 Mannat Bank
