@@ -281,7 +281,7 @@
               </select>
             </div>
             <div id="toTarget" class="mb-3 col-md-12"></div>
-            <div class="mb-3 col-md-6"><label>Amount</label><input id="tAmount" class="form-control" placeholder="Enter Amount"required/></div>
+            <div class="mb-3 col-md-6"><label>Amount</label><input id="tAmount" class="form-control" placeholder="Enter Amount"/></div>
             <div class="mb-3 col-md-6"><label>Note</label><input id="tNote" class="form-control" /></div>
           </div>
           <div class="d-flex gap-2"><button class="btn btn-success" type="submit">Transfer</button></div>
@@ -298,7 +298,7 @@
         const bens = user.beneficiaries || [];
         let opt = '<label>Beneficiary / Other Bank</label><select id="toAcct" class="form-select">';
         opt += `<option value="">-- Enter new beneficiary --</option>` + bens.map(b=>`<option value="ben_${b.id}">${b.name} - ${b.bank} - ${b.acc}</option>`).join('');
-        opt += `</select><div class="mt-2"><input id="newBenName" placeholder="Beneficiary Name" class="form-control mb-1"/><input id="newBenBank" placeholder="Bank Name" class="form-control mb-1"/><input id="newBenAcc" placeholder="Account no / UPI" class="form-control mb-1" required/></div>`;
+        opt += `</select><div class="mt-2"><input id="newBenName" placeholder="Beneficiary Name" class="form-control mb-1"/><input id="newBenBank" placeholder="Bank Name" class="form-control mb-1"/><input id="newBenAcc" placeholder="Account no / UPI" class="form-control mb-1" /></div>`;
         toTarget.innerHTML = opt;
       }
     }
@@ -342,8 +342,8 @@
           <div class="row">
             <div class="mb-3 col-md-6"><label>From Account</label><select id="billFrom" class="form-select">${user.accounts.map(a=>`<option value="${a.id}">${a.name} (₹${toNum(a.balance).toLocaleString()})</option>`).join('')}</select></div>
             <div class="mb-3 col-md-6"><label>Category</label><select id="billCat" class="form-select"><option>Mobile Recharge</option><option>Electricity</option><option>Gas</option><option>DTH</option><option>Insurance</option></select></div>
-            <div class="mb-3 col-md-6"><label>Reference / Number</label><input id="billRef" class="form-control" required/></div>
-            <div class="mb-3 col-md-6"><label>Amount</label><input id="billAmt" class="form-control" placeholder"Enter Amount" required/></div>
+            <div class="mb-3 col-md-6"><label>Reference / Number</label><input id="billRef" class="form-control"/></div>
+            <div class="mb-3 col-md-6"><label>Amount</label><input id="billAmt" class="form-control" placeholder"Enter Amount"/></div>
           </div>
           <div><button class="btn btn-success" type="submit">Pay Bill</button></div>
         </form>
